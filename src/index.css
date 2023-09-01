@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* ------------------ CSS VARIABLES ----------------- */
+/* ==========================================================================
+  CSS VARIABLES
+  ========================================================================== */
 
 :root {
   --color-bg: #1f1f38;
@@ -17,7 +19,9 @@
   --container-width-sm: 90%;
 }
 
-/* ------------------ RESET CSS ----------------- */
+/* ==========================================================================
+  RESET CSS
+  ========================================================================== */
 
 * {
   margin: 0;
@@ -29,7 +33,9 @@
   text-decoration: none;
 }
 
-/* ------------------ COLORS, FONTS, AND BACKGROUND ----------------- */
+/* ==========================================================================
+  COLORS, FONTS, AND BACKGROUND
+  ========================================================================== */
 
 body {
   background-color: #000;
@@ -50,51 +56,22 @@ body {
   color: var(--color-white);
   line-height: 1.7;
 
-  background-color: #060609;
-  opacity: 0.8;
-  background-image: linear-gradient(45deg, var(--color-bg) 50%, #060609 50%);
-  background-size: 10px 10px;
-
   /* background: var(--color-bg);
     background-image: url(../src/assets/bg-texture.png); */
 
-  background: linear-gradient(45deg, #1f1f38 25%, transparent 25%),
-    linear-gradient(315deg, #1f1f38 25%, transparent 25%),
-    linear-gradient(
-      45deg,
-      transparent 24%,
-      #24244c 25%,
-      #24244c 30%,
-      transparent 31%,
-      transparent 39%,
-      #24244c 40%,
-      #24244c 45%,
-      transparent 45%
-    ),
-    linear-gradient(
-      315deg,
-      transparent 24%,
-      #24244c 25%,
-      #24244c 30%,
-      transparent 31%,
-      transparent 39%,
-      #24244c 40%,
-      #24244c 45%,
-      transparent 45%
-    );
+  background: radial-gradient(#24244c 15%, transparent 16%),
+    linear-gradient(45deg, transparent 49%, #24244c 49% 51%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, #24244c 49% 51%, transparent 51%);
   background-size: 6em 6em;
   background-color: #1f1f38;
   opacity: 1;
-
-  /* background: radial-gradient(#24244c 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #24244c 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #24244c 49% 51%, transparent 51%);
-     background-size: 6em 6em;
-     background-color: #1f1f38;
-     opacity: 1 */
 }
 
-/*  ------------------ GENERAL STYLES ----------------- */
+/* ==========================================================================
+  GENERAL STYLES
+  ========================================================================== */
 
-.contianer {
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
@@ -142,11 +119,11 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primarry);
+  color: var(--color-primary);
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  border: 1px solid var(--color-primarry);
+  border: 1px solid var(--color-primary);
   transition: var(--transition);
 }
 
@@ -157,7 +134,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-primarry);
+  background: var(--color-primary);
   color: var(--color-bg);
 }
 
@@ -167,10 +144,12 @@ img {
   object-fit: cover;
 }
 
-/*  ------------------ MEDIA QUIERES (MED) ----------------- */
+/* ==========================================================================
+  MEDIA QUIERES MEDIUM
+  ========================================================================== */
 
 @media screen and (max-width: 1024px) {
-  .contianer {
+  .container {
     width: var(--container-width-md);
   }
   section {
@@ -178,10 +157,12 @@ img {
   }
 }
 
-/*  ------------------ MEDIA QUIERES (SM) ----------------- */
+/* ==========================================================================
+  MEDIA QUIERES SMALL
+  ========================================================================== */
 
 @media screen and (max-width: 600px) {
-  .contianer {
+  .container {
     width: var(--container-width-sm);
   }
   section > h2 {
