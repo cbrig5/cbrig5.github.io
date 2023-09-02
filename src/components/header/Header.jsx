@@ -3,8 +3,11 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
+import useDocumentHeight from "../../userDocumentHeight";
 
 const Header = () => {
+  useDocumentHeight();
+
   return (
     <header>
       <div className="container header__container">
