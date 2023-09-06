@@ -4,7 +4,7 @@ import { PiSealCheckFill } from "react-icons/pi";
 
 const Skill = () => {
   return (
-    <section id="Skill">
+    <section id="skill">
       <h5>Exploring my abilities</h5>
       <h2>My Skills</h2>
       <div className="container skill__container">
