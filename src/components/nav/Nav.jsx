@@ -2,10 +2,11 @@ import React from "react";
 import "./nav.css";
 import { BiHome } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
+import { FiTool } from "react-icons/fi";
 import { MdWorkOutline } from "react-icons/md";
-import { AiOutlineProject } from "react-icons/ai";
 import { BiSolidContact } from "react-icons/bi";
 import { useState } from "react";
+
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -30,14 +31,14 @@ const Nav = () => {
         onClick={() => setActiveNav("#skill")}
         className={activeNav === "#skill" ? "active" : ""}
       >
-        <MdWorkOutline />
+        <FiTool />
       </a>
       <a
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <AiOutlineProject />
+        <MdWorkOutline />
       </a>
       <a
         href="#contact"
